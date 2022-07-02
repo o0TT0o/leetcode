@@ -23,7 +23,7 @@ var maxSubArray = function(nums) {
             if ( current > best){
                 best = current
             }
-        }else{
+        }else{ 
             if ( nums[index] > best){
                 best = nums[index]
             }
