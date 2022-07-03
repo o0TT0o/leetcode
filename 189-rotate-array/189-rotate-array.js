@@ -13,7 +13,9 @@ var rotate = function(nums, k) {
         if ( k%2 === 0){
             return
         }else{
-            nums.reverse()
+            let tmp = nums[0]
+            nums[0] = nums[1]
+            nums[1] = tmp
             return
         }
     }
