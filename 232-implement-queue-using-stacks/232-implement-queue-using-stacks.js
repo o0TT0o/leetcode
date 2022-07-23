@@ -27,7 +27,7 @@ MyQueue.prototype.pop = function() {
 /**
  * @return {number}
  */
-MyQueue.prototype.peek = function() {
+MyQueue.prototype.peek = function() { 
     if(this.stack2.length<=0){
         while(this.stack.length>0){
             this.stack2.push(this.stack.pop())
