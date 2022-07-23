@@ -23,7 +23,7 @@ MyQueue.prototype.pop = function() {
     }
     return this.stack2.pop()
 };
-
+ 
 /**
  * @return {number}
  */
