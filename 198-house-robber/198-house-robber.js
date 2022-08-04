@@ -15,9 +15,9 @@ var rob = function(nums) {
     let rob2 = 0
     
     for(let i =0 ;i< nums.length; i++){
-        let sum = Math.max( nums[i] + rob1 , rob2)
+        const tmp = Math.max( nums[i] + rob1 , rob2)
         rob1 = rob2
-        rob2 = sum
+        rob2 = tmp
     }
     
     return rob2
