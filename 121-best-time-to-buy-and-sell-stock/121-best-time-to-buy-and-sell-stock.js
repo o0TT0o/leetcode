@@ -19,12 +19,12 @@ var maxProfit = function(prices) {
         const currentProfile = prices[i] - minPrices
         
         if ( currentPrice < minPrices  ){
-            //console.log( currentPrice , " ---> ", minPrices)
+            //console.log("Price: ", currentPrice , " ---> ", minPrices)
             minPrices = currentPrice
         }
         
         if ( currentProfile > maxProfile  ){
-            //console.log( currentProfile , " ---> ", maxProfile)
+            //console.log("Profile: ", currentProfile , " ---> ", maxProfile)
             maxProfile = currentProfile
         }
         
