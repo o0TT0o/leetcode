@@ -4,7 +4,7 @@ class Solution:
         index = 0
         for i in nums:
             wanted = target-i
-            if i in tmp.keys():
+            if i in tmp:
                 return [tmp[i], index]
             else:
                 tmp[wanted] = index
