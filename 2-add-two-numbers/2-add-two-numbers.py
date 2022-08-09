@@ -11,7 +11,7 @@ class Solution:
         while True:
             if l1 == None and l2 ==None:
                 if carry == 1:
-                    tmpNode = ListNode()
+                    tmpNode = ListNode() 
                     tmpNode.val = 1
                     tmpNode.next = None
                     lastNode.next = tmpNode
