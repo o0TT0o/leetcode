@@ -4,21 +4,17 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    if (nums.length < 0){
-        return []
+    let tmp = new Map()
+    for (let i = 0; i< nums.length;i++) {
+        const value = nums[i]
+        const paired = target - value
+        if (tmp.has(paired)){
+            return [tmp.get(paired), i]
+        }else{
+            tmp.set(nums[i],i)
+        }
+        //console.log(tmp)
     }
     
-    let index1=0
-    let index2=0
-    while ( nums[index1] !== null){
-        index2 = index1 +1 
-        while ( nums[index2] != null){
-            if ( nums[index1] + nums[index2] === target){
-                return [index1, index2]
-            }
-            index2++
-        }
-        index1++
-    }
     return []
 };
