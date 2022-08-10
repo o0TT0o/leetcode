@@ -1,8 +1,8 @@
 func lengthOfLongestSubstring(s string) int {
     //test cases: 
-    //  "dvdf"
+    //  "dvdf" 
     longest := 0
-    startIndex := 0
+    startIndex := 0 
     endIndex := 0
     collection := make(map[rune]int)
     for pos, char := range(s) {
