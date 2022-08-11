@@ -1,3 +1,4 @@
+// 
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
     var result float64
     result = 0
