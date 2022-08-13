@@ -7,7 +7,7 @@
 //"A"
 //2
 //"ABC"
-//2 
+//2
 func convert(s string, numRows int) string {
     if numRows == 1{
         return s
