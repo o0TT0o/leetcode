@@ -24,6 +24,9 @@ func longestPalindrome(s string) string {
                 leftIndex--
             }
             seqFlag = false
+            if len(tmpStr) == length{
+                break
+            }
             
             if leftIndex >= 0 && rightIndex <length && charArr[leftIndex] == charArr[rightIndex] {
                 tmpStr = string(charArr[leftIndex])+ tmpStr+ string(charArr[rightIndex])
