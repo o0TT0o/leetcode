@@ -1,3 +1,4 @@
+// 
 func isPalindrome(x int) bool {
     input := x
     if x < 0 {
