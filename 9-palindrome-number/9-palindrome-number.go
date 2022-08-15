@@ -14,7 +14,7 @@ func isPalindrome(x int) bool {
     }
     rev_int = rev_int*10 + x
     
-    fmt.Println(rev_int)
+    //fmt.Println(rev_int)
     if rev_int == input {
         return true 
     } else {
