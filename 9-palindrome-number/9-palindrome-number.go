@@ -7,12 +7,13 @@ func isPalindrome(x int) bool {
     if x < 10 {
         return true
     }
+
+    if x > math.MaxInt32 || x < math.MinInt32{
+        return false
+    }
     
     rev_int :=0
     for x>=10{
-        if x > math.MaxInt32 || x < math.MinInt32{
-            return false
-        }
         rev_int = rev_int*10 + x%10
         x = x/10
     }
