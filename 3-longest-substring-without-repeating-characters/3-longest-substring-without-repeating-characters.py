@@ -1,7 +1,7 @@
 class Solution:
     # test cases:
     #   "bvvf"
-    #   "au"
+    #   "au" 
     #   "abba"
     def lengthOfLongestSubstring(self, s: str) -> int:
         if len(s) == 0:
